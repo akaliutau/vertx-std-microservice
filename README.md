@@ -43,7 +43,14 @@ To run your application:
 java -cp ./target/vx-1.0.0-SNAPSHOT-fat.jar verticle.api.ProfileVerticle 
 ```
 
-Run all containers, register a user, then get a token and perform GET request for users profile
+Testing
+========
+
+Run all containers, register a user, then get a token and perform GET request for users profile.
+
+The whole workflow can be presented as follows:
+
+Registering a new user:
 
 ```
 POST /register HTTP/1.1
@@ -83,7 +90,7 @@ POST /api/v1/token HTTP/1.1
 
 ```
 
-Performing GET request:
+Performing GET request to receive the profile:
 
 ```
  GET /api/v1/Alisa HTTP/1.1
