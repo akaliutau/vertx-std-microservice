@@ -12,7 +12,7 @@ Demonstrates the using of the following technologies:
 * Exposing public end points to access the data saved in the database
 
 
-public api:
+Public api contract:
 
 | Method | Endpoint                   |Secure|      Description                                  |
 |--------|----------------------------|------|---------------------------------------------------|
