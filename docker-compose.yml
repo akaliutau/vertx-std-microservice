@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+
+  mongo:
+    image: mongo:4-bionic
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=profiles
+    volumes:
+      - ./db/mongo:/docker-entrypoint-initdb.d
+
+  postgres:
+    image: postgres:11-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: "postgres"
+    volumes:
+      - ./db/postgres:/docker-entrypoint-initdb.d/
+
